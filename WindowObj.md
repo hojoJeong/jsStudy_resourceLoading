@@ -41,11 +41,12 @@ document.body.clientWidth
 #####window 접두사는 생략 가능!
 
 ***
-###브라우저 새 창 열기
+### 브라우저 새 창 열기
 
 ###### window 객체의 open() 메소드를 이용하면, 새로운 브라우저 창을 열 수 있습니다.
 ###### 또한, 새로운 브라우저 창의 세부적인 옵션들도 일일이 설정할 수 있습니다.
-'''
+<pre>
+<code>
 var newWindowObj;
 
 // 변수 strWindowFeatures를 통해 새롭게 여는 브라우저 창의 옵션들을 일일이 설정할 수 있음.
@@ -57,11 +58,15 @@ function openWindow() {
     newWindowObj = window.open("/html/intro", "HTML 개요", strWindowFeatures);
 
 }
-'''
+</pre>
+</code>
+
 ***
 ### 브라우저 창 닫기   
 ###### window 객체의 close() 메소드를 이용하면, 현재 브라우저나 특정 브라우저 창을 닫을 수 있습니다.
-'''
+
+<pre>
+<code>
 function openWindow() {
 
     newWindowObj = window.open("/html/intro", "HTML 개요", strWindowFeatures);
@@ -73,4 +78,5 @@ function closeNewWindow() { // 새롭게 연 브라우저 창을 window 객체�
     newWindowObj.close();
 
 }
-'''
+</pre>
+</code>
