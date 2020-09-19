@@ -1,6 +1,8 @@
 # Screen 객체
 
-##### screen 객체는 사용자의 디스플레이 화면에 대한 다양한 정보를 저장하는 객체입니다.
+screen 객체는 사용자의 디스플레이 화면에 대한 다양한 정보를 저장하는 객체입니다.
+
+***
 
 1. 사용자 화면 크기 : screen.width, screen.height
 ```js
@@ -14,7 +16,8 @@ document.write("현재 브라우저 창의 너비는 " + window.outerWidth + "�
 
 document.write("현재 브라우저 창의 높이는 " + window.outerHeight + "픽셀입니다.<br>");
 ```
->screen.width와 screen.height는 현재 사용자의 모니터 화면의 크기를 반환합니다. 하지만 window.outerWidth와 window.outerHeight는 현재 브라우저 창의 크기를 반환합니다.
+>screen.width와 screen.height는 현재 사용자의 모니터 화면의 크기를 반환합니다.
+하지만 window.outerWidth와 window.outerHeight는 현재 브라우저 창의 크기를 반환합니다.
 
 2. 실제 사용할 수 있는 화면 크기 : screen.availWidth, screen.availHeight
 ```js
@@ -23,6 +26,7 @@ document.write("실제 사용할 수 있는 화면의 너비는 " + screen.avail
 document.write("실제 사용할 수 있는 화면의 높이는 " + screen.availHeight + "픽셀입니다.");
 ```
 >작업표시줄과 같은 공간을 모두 제외한 크기!
+>outerWidth와 outerHeight의 최댓값은 availWidth, availHeight
 
 3. 한 색상당 사용할 수 있는 비트 수 : screen.colorDepth
 ```js

@@ -1,8 +1,8 @@
 # Location 객체
 
-##### location 객체는 현재 브라우저에 표시된 HTML 문서의 주소를 얻거나, 브라우저에 새 문서를 불러올 때 사용할 수 있습니다.   
-##### 이 객체는 Window 객체의 location 프로퍼티와 Document 객체의 location 프로퍼티에 같이 연결되어 있습니다.
-##### location 객체의 프로퍼티와 메소드를 이용하면, 현재 문서의 URL 주소를 다양하게 해석하여 처리할 수 있습니다.
+location 객체는 현재 브라우저에 표시된 HTML 문서의 주소를 얻거나, 브라우저에 새 문서를 불러올 때 사용할 수 있습니다.   
+이 객체는 Window 객체의 location 프로퍼티와 Document 객체의 location 프로퍼티에 같이 연결되어 있습니다.
+location 객체의 프로퍼티와 메소드를 이용하면, 현재 문서의 URL 주소를 다양하게 해석하여 처리할 수 있습니다.
 
 ***
 
@@ -23,9 +23,10 @@ document.write("현재 문서의 파일 경로명은 " + location.pathname + "�
 ```
 > 호스트 이름(host name)과 파일 경로명(path name)을 합쳐 URL(Uniform Resource Locator)이라고 부릅니다.
 
-4. 현재 창에 문서 불러오기
+4. 현재 창에 문서 불러오기 : location 객체의 assign() 메소드는 브라우저 창에 지정된 URL 주소에 존재하는 문서를 불러옵니다.
+반면에 replace() 메소드는 새 문서를 불러오기 전에, 현재 문서를 브라우저의 히스토리에서 제거한다는 점이 assign() 메소드와 다릅니다.
+location 객체의 reload() 메소드는 브라우저 창에 현재 문서를 다시 불러옵니다.
 ```js
-	<p>아래 버튼을 눌러 새로운 문서를 연 후에 브라우저의 뒤로 가기 버튼을 눌러보세요!</p>
 	<button onclick="openDocument()">새로운 문서 열기</button>
 	<button onclick="openDocumentWithReplace()">이전 문서 삭제 후 새로운 문서 열기</button>
 	
