@@ -77,7 +77,7 @@ window.addEventListener("unload", function() {
 
 ***
 
-4. window.onbeforeunload : 사용자가 현재 페이지를 떠나려할 때 추가확인요청을 할 수 있으며, beforeunload 이벤트를 *취소*하려하면 브라우저는 사용자에게 확인 요청을 실행합니다.
+4. window.onbeforeunload : 사용자가 현재 페이지를 떠나려할 때 추가확인요청을 할 수 있으며, beforeunload 이벤트를 **취소**하려하면 브라우저는 사용자에게 확인 요청을 실행합니다.
 ```js
 window.onbeforeunload = function() {
   return false;
